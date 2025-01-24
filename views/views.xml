@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="alvaroejercicio.list">
+      <field name="name">alvaroejercicio list</field>
+      <field name="model">alvaroejercicio.alvaroejercicio</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="alvaroejercicio.action_window">
+      <field name="name">alvaroejercicio window</field>
+      <field name="res_model">alvaroejercicio.alvaroejercicio</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="alvaroejercicio.action_server">
+      <field name="name">alvaroejercicio server</field>
+      <field name="model_id" ref="model_alvaroejercicio_alvaroejercicio"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="alvaroejercicio" id="alvaroejercicio.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="alvaroejercicio.menu_1" parent="alvaroejercicio.menu_root"/>
+    <menuitem name="Menu 2" id="alvaroejercicio.menu_2" parent="alvaroejercicio.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="alvaroejercicio.menu_1_list" parent="alvaroejercicio.menu_1"
+              action="alvaroejercicio.action_window"/>
+    <menuitem name="Server to list" id="alvaroejercicio" parent="alvaroejercicio.menu_2"
+              action="alvaroejercicio.action_server"/>
+-->
+  </data>
+</odoo>
